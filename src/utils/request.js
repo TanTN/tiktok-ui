@@ -9,4 +9,3 @@ const get = async (path, options = {}) => {
     return response.data
 };
 export {get}
-export default  request

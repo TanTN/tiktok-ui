@@ -1,18 +1,18 @@
 import * as request from '~/utils/request'
 
-
 const search = async (q, type = 'less') => {
     try {
-        const res = await request.get('users/search',{
-            params: {
+        const res = await request.get('users/search', {
+            params:{
                 q,
-                type,
+                type
             }
         })
         return res.data
     }
-    catch (error) {
-        console.log(error)
+    catch(err) {
+        console.log(err)
     }
 }
+
 export {search}

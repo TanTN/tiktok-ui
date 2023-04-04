@@ -1,6 +1,6 @@
 function Home() {
     return ( 
-        <h2>Home page</h2>
+        <h2 height='2000px'>Home page</h2>
      );
 }
 
