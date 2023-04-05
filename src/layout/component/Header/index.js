@@ -21,8 +21,8 @@ import styles from './Header.module.scss';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/menu';
 import Image from '~/components/image';
-import Search from '~/components/Layout/component/Search';
-import routesConfig  from "~/config/routes"
+import Search from '~/layout/component/Search';
+import routesConfig from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
@@ -41,7 +41,6 @@ const MENU_ITEMS = [
                     code: 'vi',
                     title: 'Tieng Viet',
                 },
-                
             ],
         },
     },
@@ -59,7 +58,7 @@ const MENU_ITEMS = [
 function Header() {
     const handleMenuChange = () => {};
     const currentUser = true;
-    
+
     const userMenu = [
         {
             icon: <FontAwesomeIcon icon={faCircleQuestion} />,
@@ -109,7 +108,7 @@ function Header() {
                             </Tippy>
                             <Tippy content="Messager" placement="bottom" delay={[0, 50]} offset={[0, 15]}>
                                 <button className={cx('action-btn')}>
-                                    <MessengerIcon width='2.8rem' height='2.8rem' />
+                                    <MessengerIcon width="2.8rem" height="2.8rem" />
                                 </button>
                             </Tippy>
                             <Tippy content="Inbox" placement="bottom" delay={[0, 50]} offset={[0, 15]}>
@@ -134,7 +133,7 @@ function Header() {
                                 src="https://images2.thanhnien.vn/Uploaded/tuyenth/2022_04_09/4-6124.jpg"
                             ></Image>
                         ) : (
-                            <button className={cx('more-btn')} >
+                            <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faEllipsisVertical} />
                             </button>
                         )}

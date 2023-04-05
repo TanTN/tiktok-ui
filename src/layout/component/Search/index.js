@@ -10,7 +10,7 @@ import AccountItem from '~/components/Accountitem';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Search.module.scss';
 import { useDebounce } from '~/hooks';
-import * as searchServices from '~/apiServices/searchServices';
+import * as searchServices from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 
@@ -67,7 +67,8 @@ function Search() {
 
     
     return (
-        
+        // Using a wrapper <div> or <span> tag around the reference
+        //  element solves this by creating a new parentNode context.
         <div>
             <HeadlessTippy
                 interactive
