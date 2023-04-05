@@ -10,7 +10,7 @@ import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 
-// Public routers
+// Public routes
 const publicRoutes = [
     { path: config.routes.home, component: Home },
     { path: config.routes.following, component: Following },

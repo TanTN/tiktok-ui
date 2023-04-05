@@ -22,7 +22,7 @@ import Button from '~/components/Button';
 import Menu from '~/components/Popper/menu';
 import Image from '~/components/image';
 import Search from '~/layout/component/Search';
-import routesConfig from '~/config/routes';
+import config from '~/config';
 
 const cx = classNames.bind(styles);
 
@@ -84,15 +84,16 @@ function Header() {
             separate: true,
         },
     ];
-
+    
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo-link')}>
+                <Link to={config.routes.home} className={cx('logo-link')}>
                     <img
                         width="118"
                         height="42"
                         src="https://raw.githubusercontent.com/sondnpt00343/tiktok-ui/788118113e115f73493328becee5db6ae2b1bd76/src/assets/images/logo.svg"
+                        alt='Tiktok'
                     />
                 </Link>
 

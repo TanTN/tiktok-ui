@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Header from '~/layout/component/Header';
 function HeaderOnly({ children }) {
     return (
@@ -8,6 +9,10 @@ function HeaderOnly({ children }) {
             </div>
         </div>
     );
+}
+
+HeaderOnly.propTypes = {
+    children: PropTypes.node.isRequired
 }
 
 export default HeaderOnly;
