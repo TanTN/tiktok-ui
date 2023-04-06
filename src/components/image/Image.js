@@ -9,11 +9,12 @@ function Image({ alt, src, className, fallBack: customFallBack = images.noImage,
         setFallBack(customFallBack)
     }
     return <img 
-    className={classNames(styles.wrapper,className)} 
-    alt={alt} 
-    src={fallBack || src} 
-    {...props} ref={ref} 
-    onError={handleError}
+        {...props}
+        className={classNames(styles.wrapper,className)} 
+        alt={alt} 
+        src={fallBack || src} 
+        ref={ref} 
+        onError={handleError}
     />;
 }
 Image.propTypes = {
