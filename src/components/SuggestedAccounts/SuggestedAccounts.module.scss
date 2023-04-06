@@ -1,0 +1,68 @@
+
+.wrapper {
+    border-top: 1px solid #e1e1e1;
+    padding: 16px 0 16px 24px;
+}
+.account-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    transition: background-color ease-in-out 200ms;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(22, 24, 35, .03);
+        border-radius: 4px;
+    }
+}
+.label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+.item-info {
+    flex:1;
+}
+.nickname {
+    color: rgb(22, 24, 35);
+    font-family: "IBM Plex Sans", SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-top: -2px;
+    max-width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.check-icon {
+    font-size: 1.4rem;
+    margin-left: 4px;
+    color: rgb(32, 213, 236);
+}
+.name {
+    color: rgba(22, 24, 35, 0.75);
+    font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 15px;
+    max-width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.more-btn{
+    color: rgb(254, 44, 85);
+    font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    cursor: pointer;
+}

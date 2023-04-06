@@ -1,0 +1,59 @@
+.wrapper {
+    width: 320px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.avatar {
+    width: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-name {
+    color: rgb(22, 24, 35);
+    font-family: "IBM Plex Sans", SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+.check-icon {
+    font-size: 1.4rem;
+    margin-left: 4px;
+    color: rgb(32, 213, 236);
+}
+.name {
+    color: rgb(22, 24, 35);
+    font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+.analytics {
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+.value {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+.label {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+    + .value {
+        margin-left: 12px;
+    }
+}
+.reset-button {
+    min-width: 106px;
+    min-height: 28px;
+}

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 import classNames from "classnames/bind";
-import styles from "./Accountitem.modul.scss"
+import styles from "./Accountitem.module.scss"
 import Image from "../image";
 
 const cx = classNames.bind(styles)
