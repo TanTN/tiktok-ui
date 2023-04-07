@@ -3,6 +3,7 @@ import Tippy from "@tippyjs/react/headless";
 
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
+
 import styles from './SuggestedAccounts.module.scss'
 import Image from "../image/Image";
 import AccountPreview from "./AccountPreview";
@@ -36,10 +37,10 @@ function AccountItem() {
                     />
                     <div className={(cx('item-info'))}>
                         <p className={cx('nickname')}>
-                            <span>tan</span>
+                            <span>annhien_boiboi</span>
                             <BsFillCheckCircleFill className={cx('check-icon')}/>
                         </p>
-                        <p className={cx('name')}>tan</p>
+                        <p className={cx('name')}>AnNhiên ❤️ BốiBối</p>
         
                     </div>
                 </div>

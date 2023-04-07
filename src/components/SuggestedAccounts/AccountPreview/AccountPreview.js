@@ -19,7 +19,7 @@ function AccountPreview() {
             <div className="body">
                 <span className={cx('user-name')}>annhien_boiboi</span>
                 <BsFillCheckCircleFill className={cx('check-icon')}/>
-                <p className={cx('name')}>AnNhien BoiBoi</p>
+                <p className={cx('name')}>AnNhiên ❤️ BốiBối</p>
                 <p className={cx('analytics')}>
                     <span className={cx('value')}>10,4M</span>
                     <span className={cx('label')}>Follower</span>
